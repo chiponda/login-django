@@ -1,4 +1,9 @@
-<html>
+{%extends 'crm/base.html'%}
+{% block title%}
+<Title>Home</Title>
+{%endblock%}
+
+    {%block navbar%}
 
     <h1> This is the homepage </h1>
 
@@ -6,6 +11,6 @@
 
     <br> <br> 
 
-    <a href="{% url 'my-login' %}"> Login here </a>
+    <a href="{% url 'login' %}"> Login here </a>
 
-</html>
+{%endblock%}

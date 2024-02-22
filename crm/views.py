@@ -30,7 +30,7 @@ def register(request):
 
             form.save()
 
-            return redirect("my-login")
+            return redirect("login")
 
 
     context = {'registerform':form}
@@ -74,7 +74,7 @@ def user_logout(request):
 
 
 
-@login_required(login_url="my-login")
+@login_required(login_url="login")
 def dashboard(request):
 
     return render(request, 'crm/dashboard.html')

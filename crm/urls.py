@@ -4,15 +4,15 @@ from . import views
 
 urlpatterns = [
 
-    path('', views.homepage, name=""),
+    path('', views.homepage, name="home"),
 
     path('register', views.register, name="register"),
 
-    path('my-login', views.my_login, name="my-login"),
+    path('my-login', views.my_login, name="login"),
 
     path('dashboard', views.dashboard, name="dashboard"),
 
-    path('user-logout', views.user_logout, name="user-logout"),
+    path('logout', views.user_logout, name="logout"),
     
 ]
 
