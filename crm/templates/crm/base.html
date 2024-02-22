@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block title %}
+    {%endblock%}
+
+ 
+ 
+
+
+</head>
+<body>
+   <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Register</a></li>
+        
+        <li><a href="#">Login</a></li>
+          
+        <li><a href="#">Driver</a></li>
+        
+      </ul> 
+    </nav>
+      {% block navbar%}
+      {%endblock%}
+</body>
+
+
+<style>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(35, 90, 194);
+}
+</style>
+
+</html>
